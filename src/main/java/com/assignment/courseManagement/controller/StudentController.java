@@ -3,16 +3,14 @@ package com.assignment.courseManagement.controller;
 import com.assignment.courseManagement.beans.req.StudentRequest;
 import com.assignment.courseManagement.beans.res.CourseResponse;
 import com.assignment.courseManagement.beans.res.StudentResponse;
-import com.assignment.courseManagement.model.Course;
-import com.assignment.courseManagement.model.Student;
 import com.assignment.courseManagement.service.StudentService;
+import com.assignment.courseManagement.service.impl.StudentServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/students")

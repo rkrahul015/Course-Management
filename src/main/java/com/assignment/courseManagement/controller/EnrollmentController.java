@@ -2,12 +2,10 @@ package com.assignment.courseManagement.controller;
 
 import com.assignment.courseManagement.beans.req.EnrollmentRequest;
 import com.assignment.courseManagement.beans.res.EnrollmentResponse;
-import com.assignment.courseManagement.model.Enrollment;
 import com.assignment.courseManagement.service.EnrollmentService;
-import org.hibernate.sql.Update;
+import com.assignment.courseManagement.service.impl.EnrollmentServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.scheduling.config.Task;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
