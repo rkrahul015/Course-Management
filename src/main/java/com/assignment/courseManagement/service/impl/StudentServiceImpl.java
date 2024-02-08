@@ -37,13 +37,13 @@ public class StudentServiceImpl implements StudentService {
         student.setLastName(studentRequest.getLastName());
         student.setEmail(studentRequest.getEmail());
         Student save = studentRepository.save(student);
+
         StudentResponse response = new StudentResponse();
         response.setStudentId(save.getStudentId());
         response.setFirstName(save.getFirstName());
         response.setLastName(save.getLastName());
         response.setEmail(save.getEmail());
         return response;
-
     }
     @Override
     //Task 2 :  Fetch a single student of particular Id using GET mapping
@@ -82,6 +82,7 @@ public class StudentServiceImpl implements StudentService {
     //Task 4 :To delete a Student using DELETE mapping
     @Override
     public void deleteStudent(Long id) {
+
         studentRepository.deleteById(id);
     }
 
